@@ -1,0 +1,64 @@
+.destinationContainer {
+  width: 60%;
+  margin: 0 auto;
+  position: relative;
+  top: -50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .destination {
+    text-align: center;
+    color: #fff;
+    width: 30%;
+    height: 250px;
+    font-family: proxima-nova, sans-serif;
+
+    .inside {
+      margin: auto;
+      padding: 50px 0;
+
+      button {
+        width: 70%;
+        background-color: $blue-accent;
+        color: #fff;
+        border-radius: 20px;
+        padding: 10px;
+        border-style: none;
+      }
+    }
+  }
+  #israel {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../images/israel.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #america {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../images/america.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #austrailia {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../images/austrailia.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media all and (max-width: 900px) {
+  .destinationContainer {
+    width: 100%;
+    flex-direction: column;
+    min-height: 800px;
+    .destination {
+      width: 60%;
+      height: 250px;
+    }
+  }
+}
